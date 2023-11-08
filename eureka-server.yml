@@ -1,0 +1,16 @@
+server:
+  port: 8761
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    registerWithEureka: true
+    fetchRegistry: true
+#  security:
+#    oauth2:
+#      resource:
+#        id: my-eureka-resource
+#      client:
+#        client-id: my-eureka-client-id
+#        client-secret: my-eureka-client-secret
