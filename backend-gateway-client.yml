@@ -1,6 +1,6 @@
-logging.level:
-  org.springframework.cloud.netflix.eureka.server: DEBUG
-
+logging:
+  level:
+    org.springframework.cloud.netflix.eureka.server: DEBUG
 
 spring:
   security:
@@ -11,8 +11,8 @@ spring:
             client-id: securty-oauth2
             client-secret: MYPOUP5nGAGRSWsCHEPCABiqRwmjvHun
             authorization-grant-type: authorization_code
-            redirect-uri: "http://localhost:8083/login/oauth2/code/{registrationId}"
+            redirect-uri: "http://localhost:8083/login/oauth2/code/keycloak"
             scope: openid, message.read
         provider:
-          backend-gateway-client:
+          keycloak:
             issuer-uri: http://localhost:8180/realms/keycloak
