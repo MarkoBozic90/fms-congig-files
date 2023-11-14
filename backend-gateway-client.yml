@@ -8,7 +8,6 @@ spring:
       client:
         registration:
           gateway:
-            provider: keyclock
             client-id: securty-oauth2
             client-secret: MYPOUP5nGAGRSWsCHEPCABiqRwmjvHun
             authorization-grant-type: authorization_code
