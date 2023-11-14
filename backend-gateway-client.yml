@@ -15,4 +15,4 @@ spring:
             scope: openid, message.read
         provider:
           keycloak:
-            issuer-uri: http://localhost:8180/realms/keycloak
+            issuer-uri: http://localhost:8180/realms/keyclock
