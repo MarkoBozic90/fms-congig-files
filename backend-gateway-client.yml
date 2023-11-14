@@ -11,7 +11,7 @@ spring:
             client-id: securty-oauth2
             client-secret: MYPOUP5nGAGRSWsCHEPCABiqRwmjvHun
             authorization-grant-type: authorization_code
-            redirect-uri: "http://localhost:8083/login/oauth2/code/keycloak"
+            redirect-uri: "http://localhost:8180/login/oauth2/code/keycloak"
             scope: openid, message.read
         provider:
           keycloak:
