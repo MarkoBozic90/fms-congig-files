@@ -1,2 +1,6 @@
 logging.level:
   org.springframework.cloud.netflix.eureka.server: TRACE
+
+spring:
+  profiles:
+    active: admin
