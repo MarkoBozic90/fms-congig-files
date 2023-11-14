@@ -7,7 +7,7 @@ spring:
     oauth2:
       client:
         registration:
-          gateway:
+          backend-gateway-client:
             client-id: securty-oauth2
             client-secret: MYPOUP5nGAGRSWsCHEPCABiqRwmjvHun
             authorization-grant-type: authorization_code
