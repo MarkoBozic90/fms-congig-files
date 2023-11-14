@@ -14,5 +14,5 @@ spring:
             redirect-uri: "http://localhost:8083/login/oauth2/code/{registrationId}"
             scope: openid, message.read
         provider:
-          my-provider:
-            issuer-uri: http://localhost:8180/realms/keyclock
+          backend-gateway-client:
+            issuer-uri: http://localhost:8180/realms/keycloak
