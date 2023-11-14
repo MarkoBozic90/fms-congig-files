@@ -1,6 +1,19 @@
 logging.level:
   org.springframework.cloud.netflix.eureka.server: DEBUG
 
+
 spring:
-  profiles:
-    active: admin
+  security:
+    oauth2:
+      client:
+        registration:
+          gateway:
+            provider: keyclock
+            client-id: securty-oauth2
+            client-secret: MYPOUP5nGAGRSWsCHEPCABiqRwmjvHun
+            authorization-grant-type: authorization_code
+            redirect-uri: "http://localhost:8083/login/oauth2/code/{registrationId}"
+            scope: openid, message.read
+        provider:
+          my-provider:
+            issuer-uri: http://backend-keycloak-auth:8080/auth/realms/my_realm
